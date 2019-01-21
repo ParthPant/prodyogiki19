@@ -1,4 +1,3 @@
-
 body {
 	font-family: 'Montserrat', sans-serif;
 	background: #fff;
@@ -142,6 +141,14 @@ nav.navbar.fixed-top.navbar-expand-lg.navbar-light.navbar-fixed-top.top-nav-coll
 	display: block;
 	width: 25px;
 	margin: 15px auto 10px;
+}
+
+#toggler {
+	cursor: pointer;
+	width: 28px;
+	height: 15px;
+	padding: 2px;
+	background: white;
 }
 
 #toggle span:after,
