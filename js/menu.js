@@ -1,4 +1,5 @@
 var theToggle = document.getElementById('toggle');
+var theToggler = document.getElementById('toggler');
 
 // based on Todd Motto functions
 // https://toddmotto.com/labs/reusable-js/
@@ -36,7 +37,24 @@ function toggleClass(elem, className) {
     }
 }
 
-theToggle.onclick = function() {
-   toggleClass(this, 'on');
+theToggler.onclick = function() {
+   toggleClass(theToggle, 'on');
    return false;
 }
+
+$(document).ready(function() {
+    $("#menu ul li a").on("click",function(event) {
+        $("#menu").toggleClass("#toggle.on+#menu");
+        toggleClass(theToggle,'on');
+        if(this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function() {
+                window.location.hash = hash;
+                toggleClass(theToggle,'on');
+            });
+        }
+    });
+});
