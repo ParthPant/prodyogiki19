@@ -339,14 +339,16 @@ h3.agile-title {
 /* SCHEDULE */
 
 #schedule .col-3 {
-	box-shadow: 0 0 5px  black;
-	background: #c7ecee;
+	box-shadow: 0 0 10px  #428bca;
+	background: #428bca;
 	padding: 5px;
-	font-size: 1.5vw;
+	font-size: 1.2em;
+	color: white;
 }
 
 #schedule .col-3:nth-of-type(2n) {
-	background: white;;
+	background: white;
+	color: black;
 }
 
 #schedule .row {
