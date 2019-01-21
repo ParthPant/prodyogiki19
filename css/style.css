@@ -335,6 +335,27 @@ h3.agile-title {
 }
 
 /* //banner text */
+
+/* SCHEDULE */
+
+#schedule .col-3 {
+	box-shadow: 0 0 10px  #428bca;
+	background: #428bca;
+	padding: 5px;
+	font-size: 1.2em;
+	color: white;
+}
+
+#schedule .col-3:nth-of-type(2n) {
+	background: white;
+	color: black;
+}
+
+#schedule .row {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
 /* title  */
 span.title-icon-wthree {
 	color: #e7c13c;
