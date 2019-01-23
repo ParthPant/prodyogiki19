@@ -424,10 +424,20 @@ h3.agile-title {
     font-size: 1.2em;
     color: #3d3d3d;
     text-align: right;
+    border-radius: 0.5vw;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: 700;
 }
 #schedule .date {
     box-shadow: 0 0 10px #428bca;
     padding: 15px;
+    border-radius: 0.5vw;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#schedule .date h3 {
+    font-weight: 800;
 }
 #schedule .row {
     margin-top: 5px;
