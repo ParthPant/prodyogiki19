@@ -105,7 +105,6 @@ nav.navbar.fixed-top.navbar-expand-lg.navbar-light.navbar-fixed-top {
     transition: 0.5s all;
     border-bottom: 1px solid rgba(238, 238, 238, 0.09);
 }
-
 h1.wthree-logo {
     line-height: 1;
 }
@@ -440,8 +439,7 @@ h3.agile-title {
     font-weight: 800;
 }
 #schedule .row {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 5px;
 }
 /* title  */
 span.title-icon-wthree {
