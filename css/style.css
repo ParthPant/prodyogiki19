@@ -1,6 +1,6 @@
 body {
     font-family: "Montserrat", sans-serif;
-    background: #fff;
+    background: #010101;
 }
 
 body a,
@@ -27,7 +27,7 @@ h6 {
 
 p {
     margin: 0;
-    color: #777;
+    color: #ccc;
     font-size: 0.9em;
     line-height: 2;
 }
@@ -94,7 +94,8 @@ body a:focus {
     border-bottom: 1px solid rgba(243, 242, 242, 0.41);
 }
 div#menu li.active a {
-    color: #4b49de;
+    color: #428bca;
+    font-weight: 800;
 }
 nav.navbar.fixed-top.navbar-expand-lg.navbar-light.navbar-fixed-top {
     background: none;
@@ -103,7 +104,6 @@ nav.navbar.fixed-top.navbar-expand-lg.navbar-light.navbar-fixed-top {
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     transition: 0.5s all;
-    border-bottom: 1px solid rgba(238, 238, 238, 0.09);
 }
 h1.wthree-logo {
     line-height: 1;
@@ -141,16 +141,15 @@ nav.navbar.fixed-top.navbar-expand-lg.navbar-light.navbar-fixed-top.top-nav-coll
 /* Important styles */
 #toggle {
     display: block;
-    width: 25px;
-    margin: 15px auto 10px;
+    padding: 0;
+    cursor: pointer;
 }
 
 #toggler {
-    cursor: pointer;
     width: 28px;
     height: 15px;
     padding: 2px;
-    background: white;
+    background: transparent;
 }
 
 #toggle span:after,
@@ -175,7 +174,7 @@ nav.navbar.fixed-top.navbar-expand-lg.navbar-light.navbar-fixed-top.top-nav-coll
 #toggle span:before {
     width: 100%;
     height: 5px;
-    background-color: #333;
+    background-color: #428bca;
     transition: all 0.3s;
     backface-visibility: hidden;
     border-radius: 2px;
@@ -257,10 +256,7 @@ h5.in-title {
 }
 
 .banner {
-    background: #ffffff;
-    background: #ffffff;
-    background: url(../images/banner.png) no-repeat center #ffffff;
-    background-size: cover;
+    background-color: #000;
     min-height: 100vh;
 }
 
@@ -279,7 +275,8 @@ h3.agile-title {
     text-transform: capitalize;
     font-size: 2.5em;
     font-weight: 600;
-    color: #000;
+    color: #ccc;
+    text-transform: uppercase;
 }
 
 .banner_text_wthree h4 {
@@ -288,7 +285,20 @@ h3.agile-title {
     font-size: 1.5em;
     line-height: 1.5;
 }
-
+#feilds {
+    margin-top: 81vh;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feild {
+    display: inline;
+    margin: 7px;
+}
+.feild img {
+    height: 96px;
+}
 /* The following is all you really need for the effect to work */
 .backbox h4 {
     font-family: "Montserrat", sans-serif;
@@ -301,76 +311,18 @@ h3.agile-title {
     line-height: 2;
     width: 100%;
     position: absolute;
-    background-image: -webkit-gradient(
-        linear,
-        0% 50%,
-        100% 50%,
-        color-stop(0%, rgba(255, 255, 255, 0)),
-        color-stop(40%, rgba(255, 255, 255, 0.3)),
-        color-stop(60%, rgba(255, 255, 255, 0.3)),
-        color-stop(100%, rgba(255, 255, 255, 0))
-    );
-    background-image: -moz-linear-gradient(
-        left,
-        rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0.3) 40%,
-        rgba(255, 255, 255, 0.3) 60%,
-        rgba(255, 255, 255, 0)
-    );
-    background-image: -webkit-linear-gradient(
-        left,
-        rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0.3) 40%,
-        rgba(255, 255, 255, 0.3) 60%,
-        rgba(255, 255, 255, 0)
-    );
-    background-image: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0.3) 40%,
-        rgba(255, 255, 255, 0.3) 60%,
-        rgba(255, 255, 255, 0)
-    );
 }
 .bb-text {
     color: #fff;
 }
 
 .backbox:before {
-    width: 100%;
-    height: 0.125rem;
+    width: 5px;
     position: absolute;
     left: 0;
     top: 0;
     content: "";
-    background-image: -webkit-gradient(
-        to right,
-        rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0.04) 40%,
-        rgba(255, 255, 255, 0.06) 60%,
-        rgba(255, 255, 255, 0)
-    );
-    background-image: -moz-linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0.04) 40%,
-        rgba(255, 255, 255, 0.06) 60%,
-        rgba(255, 255, 255, 0)
-    );
-    background-image: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0.04) 40%,
-        rgba(255, 255, 255, 0.06) 60%,
-        rgba(255, 255, 255, 0)
-    );
-    background-image: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0.04) 40%,
-        rgba(255, 255, 255, 0.06) 60%,
-        rgba(255, 255, 255, 0)
-    );
+    background-color: #428bca;
 }
 
 .backbox:after {
@@ -418,10 +370,10 @@ h3.agile-title {
 
 #schedule .event-card {
     box-shadow: 0 0 10px #428bca;
-    background: #ffffff;
+    background: #010101;
     padding: 10px 21px;
     font-size: 1.2em;
-    color: #3d3d3d;
+    color: #aaa;
     text-align: right;
     border-radius: 0.5vw;
     border-top-left-radius: 0;
@@ -459,9 +411,9 @@ span.title-icon-wthree {
 
 h3.agile-head {
     font-size: 1.9em;
-    text-transform: capitalize;
-    font-weight: 600;
-    color: #000;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #ccc;
 }
 
 p.title-text {
@@ -487,6 +439,19 @@ a.btn-agile {
 
 a.btn-agile span {
     margin-left: 10px;
+}
+
+.card {
+    background-color: #000;
+}
+
+.contact-me {
+    color: #428bca;
+    font-weight: bold;
+}
+.contacts div h6 {
+    color: #ccc;
+    font-size: 13px;
 }
 
 .abt-right {
