@@ -80,7 +80,7 @@ p.group.inner.list-group-item-text {
 .item.list-group-item {
     float: none;
     width: 100%;
-    background-color: #fff;
+    background-color: #000;
     margin-bottom: 30px;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
