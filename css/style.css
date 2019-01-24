@@ -447,6 +447,16 @@ span.title-icon-wthree {
     font-size: 1em;
 }
 
+.scheduleLink {
+    cursor: pointer;
+    letter-spacing: 0px;
+    transition: all 0.3s;
+}
+
+.scheduleLink:hover {
+    letter-spacing: 3px;
+}
+
 h3.agile-head {
     font-size: 1.9em;
     text-transform: capitalize;
