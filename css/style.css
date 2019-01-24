@@ -257,9 +257,9 @@ h5.in-title {
 }
 
 .banner {
-    background: #1c0a63;
-    background: #e7c13c;
-    background: url(../images/banner.png) no-repeat center #1c0a63;
+    background: #ffffff;
+    background: #ffffff;
+    background: url(../images/banner.png) no-repeat center #ffffff;
     background-size: cover;
     min-height: 100vh;
 }
