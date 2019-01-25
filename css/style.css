@@ -305,7 +305,7 @@ h3.agile-title {
 
 .feild img {
     height: 9vw;
-    max-height: 96vw;
+    max-height: 96px;
 }
 
 /* The following is all you really need for the effect to work */
