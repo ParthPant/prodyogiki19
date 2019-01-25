@@ -93,10 +93,12 @@ body a:focus {
     padding: 0em 2em;
     border-bottom: 1px solid rgba(243, 242, 242, 0.41);
 }
+
 div#menu li.active a {
     color: #428bca;
     font-weight: 800;
 }
+
 nav.navbar.fixed-top.navbar-expand-lg.navbar-light.navbar-fixed-top {
     background: none;
     border: none;
@@ -105,6 +107,7 @@ nav.navbar.fixed-top.navbar-expand-lg.navbar-light.navbar-fixed-top {
     -moz-transition: 0.5s all;
     transition: 0.5s all;
 }
+
 h1.wthree-logo {
     line-height: 1;
 }
@@ -124,9 +127,7 @@ nav.navbar.fixed-top.navbar-expand-lg.navbar-light.navbar-fixed-top.top-nav-coll
         0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12);
 }
 
-nav.navbar.fixed-top.navbar-expand-lg.navbar-light.navbar-fixed-top.top-nav-collapse
-    h1.wthree-logo
-    a {
+nav.navbar.fixed-top.navbar-expand-lg.navbar-light.navbar-fixed-top.top-nav-collapse h1.wthree-logo a {
     color: #000;
     font-size: 0.7em;
 }
@@ -193,7 +194,7 @@ nav.navbar.fixed-top.navbar-expand-lg.navbar-light.navbar-fixed-top.top-nav-coll
     transform: rotate(-45deg) translate(7px, -8px);
 }
 
-#toggle.on + #menu {
+#toggle.on+#menu {
     opacity: 1;
     visibility: visible;
 }
@@ -285,20 +286,28 @@ h3.agile-title {
     font-size: 1.5em;
     line-height: 1.5;
 }
+
 #feilds {
-    margin-top: 81vh;
-    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    padding-bottom: 3vh;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
+
 .feild {
     display: inline;
     margin: 7px;
 }
+
 .feild img {
-    height: 96px;
+    height: 9vw;
+    max-height: 96px;
 }
+
 /* The following is all you really need for the effect to work */
 .backbox h4 {
     font-family: "Montserrat", sans-serif;
@@ -312,6 +321,7 @@ h3.agile-title {
     width: 100%;
     position: absolute;
 }
+
 .bb-text {
     color: #fff;
 }
@@ -332,36 +342,28 @@ h3.agile-title {
     left: 0;
     bottom: 0;
     content: "";
-    background-image: -webkit-gradient(
-        linear,
+    background-image: -webkit-gradient(linear,
         0% 50%,
         100% 50%,
         color-stop(0%, rgba(255, 255, 255, 0)),
         color-stop(40%, rgba(255, 255, 255, 0)),
         color-stop(60%, rgba(255, 255, 255, 0.8)),
-        color-stop(100%, rgba(255, 255, 255, 0))
-    );
-    background-image: -moz-linear-gradient(
-        left,
+        color-stop(100%, rgba(255, 255, 255, 0)));
+    background-image: -moz-linear-gradient(left,
         rgba(255, 255, 255, 0),
         rgba(255, 255, 255, 0) 40%,
         rgba(255, 255, 255, 0) 60%,
-        rgba(255, 255, 255, 0)
-    );
-    background-image: -webkit-linear-gradient(
-        left,
+        rgba(255, 255, 255, 0));
+    background-image: -webkit-linear-gradient(left,
         rgba(255, 255, 255, 0),
         rgba(255, 255, 255, 0) 40%,
         rgba(255, 255, 255, 0) 60%,
-        rgba(255, 255, 255, 0)
-    );
-    background-image: linear-gradient(
-        to right,
+        rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to right,
         rgba(255, 255, 255, 0),
         rgba(255, 255, 255, 0) 40%,
         rgba(255, 255, 255, 0) 60%,
-        rgba(255, 255, 255, 0)
-    );
+        rgba(255, 255, 255, 0));
 }
 
 /* //banner text */
@@ -380,6 +382,7 @@ h3.agile-title {
     border-bottom-left-radius: 0;
     font-weight: 700;
 }
+
 #schedule .date {
     box-shadow: 0 0 10px #428bca;
     padding: 15px;
@@ -387,12 +390,15 @@ h3.agile-title {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
+
 #schedule .date h3 {
     font-weight: 800;
 }
+
 #schedule .row {
     margin: 5px;
 }
+
 /* title  */
 span.title-icon-wthree {
     color: #e7c13c;
@@ -449,6 +455,7 @@ a.btn-agile span {
     color: #428bca;
     font-weight: bold;
 }
+
 .contacts div h6 {
     color: #ccc;
     font-size: 13px;
@@ -914,6 +921,7 @@ textarea {
     padding-bottom: 10px;
     line-height: 1.5;
 }
+
 .single-left2-left li a {
     color: #000;
     font-size: 14px;
@@ -953,7 +961,9 @@ textarea {
         padding: 10vw 0 0;
     }
 }
+
 @media screen and (max-width: 1280px) {
+
     .layer-agileits1,
     .layer-agileits2 {
         padding: 4em 5em 0em 1em;
@@ -977,6 +987,7 @@ textarea {
     h5.in-title {
         font-size: 2.3em;
     }
+
     .portfolio-area li {
         width: 290px;
     }
@@ -987,6 +998,7 @@ textarea {
         font-size: 1em;
     }
 }
+
 @media screen and (max-width: 991px) {
     .layer-agileits-right img {
         padding-top: 1em;
@@ -995,6 +1007,7 @@ textarea {
     .inner-banner {
         min-height: 250px;
     }
+
     .portfolio-area li {
         width: 210px;
     }
@@ -1015,6 +1028,7 @@ textarea {
 }
 
 @media screen and (max-width: 800px) {
+
     nav.navbar.fixed-top.navbar-expand-lg.navbar-light.navbar-fixed-top,
     nav.navbar.fixed-top.navbar-expand-lg.navbar-light.navbar-fixed-top.top-nav-collapse {
         padding: 1em 6em;
@@ -1051,6 +1065,7 @@ textarea {
     h5.in-title {
         font-size: 1.8em;
     }
+
     .single-left h5 a {
         font-size: 0.9em;
     }
@@ -1069,6 +1084,7 @@ textarea {
 }
 
 @media screen and (max-width: 600px) {
+
     .ab-grid-left h4,
     .txt-ab-right h4 {
         font-size: 1.2em;
@@ -1100,9 +1116,11 @@ textarea {
     h5.in-title {
         font-size: 1.6em;
     }
+
     .portfolio-area li {
         width: 240px;
     }
+
     .single-left h5 a {
         font-size: 0.8em;
     }
@@ -1123,9 +1141,7 @@ textarea {
         font-size: 1.1em;
     }
 
-    nav.navbar.fixed-top.navbar-expand-lg.navbar-light.navbar-fixed-top.top-nav-collapse
-        h1.wthree-logo
-        a,
+    nav.navbar.fixed-top.navbar-expand-lg.navbar-light.navbar-fixed-top.top-nav-collapse h1.wthree-logo a,
     h1.wthree-logo a {
         font-size: 0.6em;
     }
@@ -1133,9 +1149,11 @@ textarea {
     h5.in-title {
         padding: 25vw 0 0;
     }
+
     .portfolio-categ li a {
         font-size: 0.8em;
     }
+
     .portfolio-area li {
         width: 196px;
     }
@@ -1162,18 +1180,21 @@ textarea {
     h5.in-title {
         padding: 30vw 0 0;
     }
+
     li.cat-item-1:before,
     li.cat-item-2:before,
     li.cat-item-3:before,
     li.cat-item-4:before {
         padding-right: 0.5rem;
     }
+
     .portfolio-area li {
         width: 94%;
     }
 }
 
 @media screen and (max-width: 384px) {
+
     nav.navbar.fixed-top.navbar-expand-lg.navbar-light.navbar-fixed-top,
     nav.navbar.fixed-top.navbar-expand-lg.navbar-light.navbar-fixed-top.top-nav-collapse {
         padding: 1em 4em;
@@ -1199,6 +1220,7 @@ textarea {
     .inner-banner {
         min-height: 200px;
     }
+
     .portfolio-categ li {
         padding: 0 4px;
     }
@@ -1248,9 +1270,11 @@ textarea {
     p.title-text {
         font-size: 0.8em;
     }
+
     .inner-banner {
         min-height: 175px;
     }
+
     .portfolio-categ li {
         padding: 0;
         font-size: 0.95em;
