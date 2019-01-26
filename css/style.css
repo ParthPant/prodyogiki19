@@ -7,11 +7,11 @@ body {
     height: 100%;
 }
 
-.parallax {
+#parallax {
     background: url(../images/stars.jpg) no-repeat center;
     background-size: cover;
-    background-attachment: fixed;  
-    height: 100%;
+    background-attachment: fixed !important;  
+    min-height: 100vh;
 }
 
 body a,
