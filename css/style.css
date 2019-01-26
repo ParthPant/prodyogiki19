@@ -384,7 +384,7 @@ h3.agile-title {
 
 #schedule .event-card {
     box-shadow: 0 0 10px #010101;
-    background: #000;
+    background: rgba(0, 0, 0, 0.5);
     padding: 10px 21px;
     font-size: 1.2em;
     color: #aaa;
@@ -462,8 +462,9 @@ a.btn-agile span {
 }
 
 .card {
-    background-color: #000;
-    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: none !important; 
+    min-height: 700px;
 }
 
 .contact-me {
@@ -1298,7 +1299,7 @@ textarea {
 
 @media screen and (max-width: 600px) {
     #schedule {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
 }
 
