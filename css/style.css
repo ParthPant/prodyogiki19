@@ -420,13 +420,13 @@ span.title-icon-wthree {
 .scheduleLink {
     color: white;
     cursor: crosshair;
-    letter-spacing: 0px;
     transition: all 0.3s;
+    font-size: 16px;
 }
 
 .scheduleLink:hover {
     color: white;
-    letter-spacing: 1px;
+    font-size:20px;
 }
 
 h3.agile-head {
@@ -464,7 +464,7 @@ a.btn-agile span {
 .card {
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: none !important; 
-    min-height: 700px;
+    min-height: 710px;
 }
 
 .contact-me {
@@ -1297,11 +1297,11 @@ textarea {
     }
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     #schedule {
         font-size: 3.5vw;
     }
-}
+} */
 
 
 /* -- //Responsive code -- */
