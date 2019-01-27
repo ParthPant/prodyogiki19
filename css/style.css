@@ -65,15 +65,27 @@ body a:focus {
     background-color: transparent;
 }
 
-#prodyHeading {
-    z-index: 1;
-    color: white;
-    margin-top: 300px;    
+#face {
+    height: 100vh;
+    color: #fff;
+    background : black;
+}
+#nith {
     position: absolute;
-    margin-left: 500px;
-    font-size: 108px;
-    font-weight: bold;
-    text-shadow: 0 0 20px  black;
+    top : 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height : 20vmin;
+}
+#face-text {
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    font-weight: 700;
+    font-size : 5vw;
+    font-family: Montserrat, sans-serif;
 }
 
 /*-- bottom-to-top --*/
