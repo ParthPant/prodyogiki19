@@ -37,7 +37,7 @@
                     j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                         'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
             })(window, document, 'script', 'dataLayer', 'GTM-T6SGLRQ');</script>
-        <!-- End Google Tag Manager --
+        <!-- End Google Tag Manager -->
 
         <!--Google Search Console-->
         <meta name="google-site-verification" content="mWgP-e4TzdZBp2PPY6eLhY8vyw2MgUSBv8Z8DE0Jv-U" />
@@ -54,6 +54,7 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
             crossorigin="anonymous">
+        <link rel="stylesheet" href="css/full-slider.css">
         <!-- Custom Theme files -->
         <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
         <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
@@ -76,13 +77,12 @@
     <style>
 
         .Contact-Us
-{
-position : absolute;
-margin-left: 60px;
-float : right;
-}
-</style>
-
+        {
+            position : absolute;
+            margin-left: 60px;
+            float : right;
+        }
+    </style>
     <script>
         updateCard = function () {
             place = document.getElementById("Art&DesignContent");
@@ -96,8 +96,47 @@ float : right;
         <!-- End Google Tag Manager (noscript) -->
 
         <!-- banner -->
-        <div class="banner">
-
+        <!-- <div class="banner"> -->
+            <header>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  </ol>
+                  
+                  <div class="carousel-inner" role="listbox">
+                        <div>
+                                <img id="nithLogo" src="images/Logos/nith.png" width="200vw" height="200vw" alt="">
+                        </div>
+                    <div id="prodyHeading">
+                        <p class="text-center">
+                            PRODYOGIKI 2019
+                        </p>
+                    </div>
+                     <!-- Slide One - Set the background image for this slide in the line below -->
+                        <div class="carousel-item active" style="background-image: url(images/cImage2.jpg)">
+                        </div>
+                        <!-- Slide Two - Set the background image for this slide in the line below -->
+                        <div class="carousel-item" style="background-image: url(images/cImage1.jpg)">
+                        </div>
+                        <!-- Slide Three - Set the background image for this slide in the line below -->
+                        <div class="carousel-item" style="background-image: url(images/cImage3.jpg)">
+                        </div>
+                        <div class="carousel-item" style="background-image: url(images/cImage4.jpg)">
+                        </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </header>
             <!-- header -->
             <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-fixed-top">
 
@@ -106,9 +145,8 @@ float : right;
 
                     <h1 class="wthree-logo" ; style="margin-left: 3%">
 
-                        <a href="http://istenith.me" id="logoLink" data-blast="color" class="color1"">
-                    <img src="
-                            images/iste_3.png" width="51px" height="51px" /> <span class="color1 f8">ISTE</span></a>
+                        <a href="http://istenith.me" id="logoLink" data-blast="color" style="color:#428bca;">
+                    <img src="images/iste_3.png" width="51px" height="51px" /> <span class="f8">ISTE</span></a>
                     </h1>
                     <div class="position-relative">
                         <a href="#menu" id="toggle">
@@ -134,18 +172,8 @@ float : right;
 
 
 
-            <div class="container" id="home">
-                <div class="row banner-row">
-                    <div class="col-lg-12 text-center">
-                        <div class='backbox'>
-                            <h4 class="color1">
-                                Indian Society for Technical Education(ISTE) Presents,
-                                <br> Prodyogiki'19</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="feilds">
+            <!-- <div class="container" id="home">
+                <div id ="feilds">
                     <div class="feild">
                         <img src="images/Logos/codes.svg">
                     </div>
@@ -158,10 +186,41 @@ float : right;
                     <div class="feild"></div>
                     <div class="feild"></div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <div id="parallax">
+            
+            
+            <!-- ABOUT US -->
+            <br><br>
+            <div id ="aboutUs" class="container">
+                    <div class="jumbotron">
+                        <h1 class="text-center">
+                            ABOUT TEAM ISTE
+                        </h1>
+                        <p style="text-align: justify;">
+                                Indian Society for Technical Education (ISTE), NIT Hamirpur has been proactively working to provide students with a variety of opportunities for their social and professional development. We strive to build camaraderie among students and offer them avenue for a variety of skill development.
+                        </p>
+                        <br> <br>
+                        <h1 class="text-center">
+                            PRODYOGIKI 2019
+                        </h1>
+                        <p style="text-align: justify;">
+                                Every technocrat’s first hand at practical implementation of what has been learnt. Every nerd’s passion. And the most fulfilling exploration of technology that any engineer can do. This is merely the glimpse of the show. The Prodyogiki of ISTE, NIT Hamirpur is designed to challenge and motivate the students at the same time, and bring out their best. The Prodyogiki is the best representative of the concept = “multi-disciplinary”. The 7 days technical spree is filled with an interactive session, workshops, events and quizzes for students promise to be melting pots of different engineering and technical fields and will set new benchmarks in collaboration between different disciplines.
+                        </p>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- <button href="events/brochure.pdf" class="btn btn-primary" download> -->
+                                    <a class="btn btn-primary" href="events/brochure.pdf" download style="text-decoration: none; color: white;" target="_Blank">GET BROCHURE</a>
+                                    <!-- </a></button -->
+                            </div>
+                        </div>
+                    </div>            
+            </div>
+            <!-- /ABOUT US -->
+
             <!-- SCHEDULE -->
 
             <section id="schedule">
@@ -227,7 +286,7 @@ float : right;
                             <h3>8<sup>th</sup><br>FEB</h3>
                         </div>
                         <div class="col-9 event-card " style="padding-top: 18px">
-                            <a href="#upthrust" class="scheduleLink">Upthrust</a><br>
+                            <a href="#chemecar" class="scheduleLink">Chem-e-Car</a><br>
                             <a href="#rubeGoldberg" class="scheduleLink">Rube Goldberg 2.0</a>
                         </div>
                     </div>
@@ -249,7 +308,9 @@ float : right;
                         </div>
                         <div class="col-9 event-card ">
                             <a href="#sanchar" class="scheduleLink">Sanchaar</a><br>
-                            <a href="#cataplane" class="scheduleLink">Cata Plane</a><br>
+                            <a href="#cataplane" class="scheduleLink">Cata Plane</a> & 
+                            <a href="#paperPlane" class="scheduleLink">Paper Plane</a>
+                            <br>
                             <a href="#roboholicWorkshop" class="scheduleLink">Roboholics</a> &
                             <a href="#eggDropChallenge" class="scheduleLink">Egg Drop</a>
                         </div>
@@ -318,7 +379,7 @@ float : right;
             </div>
         </div>
     </section>
-    <!-- //talks -->
+    <!- //talks -->
             <!-- workshops -->
             <section class="courses-sec py-lg-5 pb-5" id="events">
                 <div class="container">
@@ -368,7 +429,7 @@ float : right;
                                                     <h6>Sahaj Kulsreshtha<br> +91 8318241743</h6>
                                                 </div>
                                                 <div class="col-6 text-right">
-                                                    <h6>Jitaksh Kapoor <br> +91 9473850718</h6>
+                                                    <h6>Jitaksh Kapoor <br> +91 7696166014</h6>
                                                 </div>
                                             </div>
                                         </p>
@@ -595,7 +656,7 @@ float : right;
                                                         Register Here </a>
                                                 </div>
                                                 <div class="col-6 text-right">
-                                                    <a class="btn btn-outline-light" href="#">Get Details</a>
+                                                    <a class="btn btn-outline-light" href="events/">Get Details</a>
                                                 </div>
                                             </div>
                                             <br>
@@ -1033,11 +1094,51 @@ float : right;
                             </div>
                         </div>
 
+                        <div class="item col-md-6 col-lg-4">
+                                <div id="paperPlane" class="thumbnail card">
+                                    <div class="img-event">
+                                        <img class="group list-group-image img-fluid" src="images/pp.jpg" alt="" />
+                                    </div>
+                                    <div class="caption card-body">
+                                        <h4 class="group card-title inner list-group-item-heading">
+                                            Paper Plane</h4>
+                                        <p class="group inner list-group-item-text" style="text-align: justify;">
+                                                The forces that allow a paper plane to fly are the same ones that apply to real airplanes. In this activity you will increase how much drag a paper plane experiences and see if this changes how far the plane flies.
+                                                So get ready to start folding!                                                
+                                            <br> <br> <br>
+                                            <p class="group inner list-group-item-text" style="text-align: justify; font-size: 14px">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <a class="btn btn-outline-light" href="https://goo.gl/forms/KxVTkM4t0CfyuxkG2">
+                                                            Register Here </a>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <a class="btn btn-outline-light" href="events/sandTower.pdf"
+                                                            download>Get
+                                                            Details</a>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <p class="contact-me">Contact Us</p>
+                                                <div class="row contacts">
+                                                    <div class="col-6 text-left">
+    
+                                                        <h6>Priyanka Kumar<br> +91 9870695960</h6>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <h6>Aakhya Rai<br> +91 6393222078</h6>
+                                                    </div>
+                                                </div>
+                                            </p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <div class="item col-md-6">
+                        <div class="item col-md-6 col-lg-4">
                             <div id="rubeGoldberg" class="thumbnail card">
                                 <div class="img-event">
-                                    <img class="group list-group-image img-fluid" src="images/pj.jpg" alt="" />
+                                    <img class="group list-group-image img-fluid" src="images/pj.jpg" alt="" style="min-height: 20vh;"/>
                                 </div>
                                 <div class="caption card-body">
                                     <h4 class="group card-title inner list-group-item-heading">
@@ -1079,7 +1180,7 @@ float : right;
                             </div>
                         </div>
 
-                        <div class="item col-md-6">
+                        <div class="item col-md-6 col-lg-4">
                             <div id="chemHunt" class="thumbnail card">
                                 <div class="img-event">
                                     <img class="group list-group-image img-fluid" src="images/ch.jpg" style="height: 284.84;"
@@ -1126,22 +1227,16 @@ float : right;
                         </div>
 
                         <div class="item col-md-6">
-                            <div id="upthrust" class="thumbnail card">
+                            <div id="chemecar" class="thumbnail card">
                                 <div class="img-event">
-                                    <img class="group list-group-image img-fluid" src="images/ut.jpg" alt="" style="width: 100%" />
+                                    <img class="group list-group-image img-fluid" src="images/ccar.jpg" alt="" style="min-height: 20vh;width: 100%" />
                                 </div>
                                 <div class="caption card-body">
                                     <h4 class="group card-title inner list-group-item-heading">
-                                        Upthrust</h4>
+                                        Chem-E-Car</h4>
                                     <p class="group inner list-group-item-text" style="text-align: justify;">
-                                        A simple task of lifting a ball up can be made complex, like here in
-                                        "Upthrust" teams must utilise the right chemicals to levitate a ball in
-                                        the
-                                        air upto a specific marked height. The objective is to minimize the
-                                        height
-                                        difference between the ball height and marked height. So energise
-                                        yourself
-                                        as you prepare to take on this competition!
+                                            3... 2... 1... REACTION! A Chem-E-Car is an all-out event for all the chemical enthusiasts which will test their presence of mind. A combination of mechanical and chemical knowledge, 
+                                            this event will require participants to make a car out of simple objects provided on the spot and use chemcicals to propel that car. Maximize the distance and the prize is yours! 
                                         <p class="group inner list-group-item-text" style="text-align: justify; font-size: 14px">
                                             <div class="row">
                                                 <div class="col-6">
@@ -1149,7 +1244,7 @@ float : right;
                                                         Register Here </a>
                                                 </div>
                                                 <div class="col-6 text-right">
-                                                    <a class="btn btn-outline-light" href="events/upthrust.pdf"
+                                                    <a class="btn btn-outline-light" href="events/chemecar.pdf"
                                                         download>Get
                                                         Details</a>
                                                 </div>
@@ -1423,20 +1518,20 @@ float : right;
 
                                     <li class="mt-3">
                                         <span class="fa fa-phone mr-3"></span>
-                                        <h5 class="d-inline">Anubhav Jain</h5>
+                                        <h5 class="d-inline">Anubhav Jain (Overall Coordinator)</h5>
                                         <p class="d-inline">+91 7737702903</p>
                                     </li>
 
                                     <li class="mt-3">
                                         <span class="fa fa-phone mr-3"></span>
-                                        <h5 class="d-inline">Mayank Singh</h5>
+                                        <h5 class="d-inline">Mayank Singh (Technical Coordinator)</h5>
                                         <p class="d-inline">+91 8894166522</p>
                                     </li>
 
                                     <li class="mt-3">
                                         <span class="fa fa-phone mr-3"></span>
-                                        <h5 class="d-inline">Parthivi Jain</h5>
-                                        <p class="d-inline">+91 9634092969</p>
+                                        <h5 class="d-inline">Sumit Sharma (Finance Coordinator)</h5>
+                                        <p class="d-inline">+91 9079083981</p>
                                     </li>
 
                                 </ul>
