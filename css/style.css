@@ -990,6 +990,18 @@ textarea {
     height: 75px;
 }
 
+/* SPONSORS */
+
+.carousel-control-prev {
+    z-index: 5;
+}
+
+.carousel-control-next {
+    z-index: 5;
+}
+
+/* END SPONSORS */
+
 /* //footer */
 /* single */
 .single-left h5 a {
