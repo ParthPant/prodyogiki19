@@ -365,6 +365,15 @@ h3.agile-title {
 
 /* //banner text */
 
+/* Frequents */
+hr.seperator {
+    background-color: #428bca;
+    height: 5px;
+    margin: 1em 0;
+}
+
+
+
 /* ABOUT US */
 
 #nithLogo {
@@ -391,25 +400,24 @@ h3.agile-title {
 
 /* SCHEDULE */
 
-#schedule .event-card {
-    box-shadow: 0 0 10px #010101;
+
+.event-card {
     background: rgba(0, 0, 0, 0.5);
-    padding: 10px 21px;
+    padding: 21px 21px;
     font-size: 1.2em;
     color: #aaa;
-    text-align: right;
-    border-radius: 7px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    text-align: center;
     font-weight: 700;
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
 }
 
 #schedule .date {
     box-shadow: 0 0 10px #428bca;
     padding: 15px;
-    border-radius: 7px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -418,26 +426,27 @@ h3.agile-title {
 }
 
 #schedule .date.active {
-    background: #fff;
-    color: #428bca;
+    color: #fff;
     animation: blinkish 1s infinite;
 }
 
-@keyframes blinkish{
+@keyframes blinkish {
     0% {
-        border : 2mm solid transparent;
+        background: transparent;
     }
+
     50% {
-        border: 2mm solid #428bca;
+        background: #428bca;
     }
+
     100% {
-        border : 2mm solid transparent;
+        background: transparent;
     }
 }
 
 #schedule .date.off {
-    background:#0f0;
-    color:#fff;
+    background: #0f0;
+    color: #fff;
 }
 
 #schedule .date h3 {
@@ -467,10 +476,11 @@ h3.agile-title {
 
 .label {
     margin-top: 100px;
-    padding-bottom: 30px;
     font-size: 24px;
+    margin-bottom: 12px;
     color: black;
 }
+
 
 .sponsor img {
     max-width: 360px;
@@ -504,14 +514,16 @@ span.title-icon-wthree {
     font-size: 1em;
 }
 
-.scheduleLink {
+a.scheduleLink {
     color: white;
     cursor: pointer;
     transition: all 0.3s;
     font-size: 16px;
+    display : block;
+    flex : 100%;
 }
 
-.scheduleLink:hover {
+a.scheduleLink:hover {
     color: white;
     font-size: 20px;
 }
