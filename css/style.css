@@ -9,7 +9,7 @@ body {
 }
 
 #parallax {
-    background: url(../images/stars.jpg) no-repeat center;
+    background: url(../images/backgrounds/maths.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed !important;
     min-height: 100vh;
@@ -389,7 +389,7 @@ hr.seperator {
 }
 
 .jumbotron {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0,0,0, 0.7);
     /* margin-top: 50px; */
 }
 
@@ -402,7 +402,7 @@ hr.seperator {
 
 
 .event-card {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     padding: 21px 21px;
     font-size: 1.2em;
     color: #aaa;
@@ -562,7 +562,7 @@ a.btn-agile span {
 }
 
 .card {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.75);
     box-shadow: none !important;
     min-height: 710px;
 }
@@ -956,7 +956,7 @@ ul.list-agileits li a {
 }
 
 h5.footer-top-title {
-    color: #fff;
+    color: #000c;
     text-transform: uppercase;
     font-size: 1.2em;
     margin-bottom: 1em;
@@ -979,11 +979,11 @@ h5.footer-top-title {
 address p,
 .header-agile li,
 .header-agile li p {
-    color: #fff;
+    color: #000c;
 }
 
 .header-agile li a {
-    color: #fff;
+    color: #000c;
 }
 
 .address p a:hover {
