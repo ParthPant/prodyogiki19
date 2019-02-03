@@ -464,7 +464,13 @@ h3.agile-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    background: #428bca;
+    color : #fff;
+}
+
+#schedule .date.active {
+    background: #fff;
+    color : #428bca;
 }
 
 #schedule .date h3 {
@@ -474,6 +480,23 @@ h3.agile-title {
 #schedule .row {
     margin: 5px;
 }
+
+/* SPONSORS */
+
+.base {
+    height : 250px;
+    background: #fff;
+    display : flex ;
+    align-items : center;
+    justify-content: center;
+    margin: 14px 0;
+    padding: 0 10px;
+}
+.base img {
+    max-height: 250px;
+}
+
+/* SPONSORED */
 
 /* title  */
 span.title-icon-wthree {
