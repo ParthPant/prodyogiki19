@@ -9,12 +9,18 @@ body {
 }
 
 #parallax {
-    background: url(../images/backgrounds/maths.jpg) no-repeat content-box;
+    background: url(../images/backgrounds/mathss.gif) no-repeat center;
     background-size: cover;
     background-attachment: fixed !important;
-    min-height: 100vh;
+    min-height: 1080px;
 }
 
+@media screen and (max-width:480px) {
+    #parallax {
+        background-attachment: scroll; 
+        background-repeat: repeat-y;
+    }
+}
 body a,
 .slider-info a,
 .card.card-pricing {
