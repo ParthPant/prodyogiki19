@@ -9,7 +9,7 @@ body {
 }
 
 #parallax {
-    background: url(../images/backgrounds/maths.jpg) no-repeat center;
+    background: url(../images/backgrounds/maths.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed !important;
     min-height: 100vh;
@@ -70,45 +70,11 @@ body a:focus {
     height: 100vh;
     width: 100%;
     color: #fff;
-    background-image: url(../images/backgrounds/frpageland.jpeg);
+    background-image: url(../images/backgrounds/frpage.svg);
     background-size: cover;
 }
 
-#nith {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 20vmin;
-}
 
-#face-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.51);
-    font-weight: 700;
-    font-size: 5vw;
-    font-family: Montserrat, sans-serif;
-}
-
-#face-text::before {
-    content: attr(data-boi);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    color: #1da1f2;
-    word-wrap: none;
-    overflow: hidden;
-    transition: 1s;
-}
-
-#face-text:hover::before {
-    width: 100%;
-}
 
 /*-- bottom-to-top --*/
 #toTop {

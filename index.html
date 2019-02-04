@@ -93,9 +93,60 @@
 
     <header>
         <div id="face">
-            <img id="nith" src="images/Logos/nith.png" alt="">
-            <p id="face-text" data-boi="PRODY">PRODYOGIKI 2019</p>
+            <div id="logos">
+                <img src="images/Logos/nith.svg" alt="">
+                <img src="images/Logos/prodyogiki.svg" alt="">
+                <img src="images/Logos/ISTEs.svg" alt="">
+            </div>
+            <div id="whatis">
+                <div id="name" data-boi="PRODY">PRODYOGIKI</div>
+                <div id="year">2K19</div>
+            </div>
         </div>
+        <style>
+            #logos {
+                display: flex;
+                justify-content: space-evenly;
+                position: absolute;
+                width: 100%;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 20vmin;
+            }
+            #whatis {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-30%);
+            }
+            #name,#year {
+                font-weight:900;
+                text-shadow: 0.5vw 0.5vw 0.5vw rgba(0,0,0,0.42);
+                font-size: 5vw;
+                text-align: center;
+            }
+            #name {
+                font-size:10vw; 
+                transition: step-end;
+            }
+            #name::before {
+                content: attr(data-boi);
+                position: absolute;
+                width: 0%;
+                color: #1da1f2;
+                overflow: hidden;
+                transition: 1s  cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                text-shadow: 0.5vw 0.5vw 0.5vw rgba(0,0,0,0.42);
+            }
+            #name:hover {
+                color: transparent;
+                text-shadow: none;
+            }
+            #name:hover::before {
+                width:100%;
+            }
+        </style>
         <script src="js/particles.js"></script>
         <script src="js/app.js"></script>
     </header>
@@ -108,7 +159,7 @@
             <h1 class="wthree-logo" ; style="margin-left: 3%">
 
                 <a href="http://istenith.me" id="logoLink" data-blast="color" style="color:#428bca;">
-                    <img src="images/Logos/ISTEs.svg" width="51px" height="51px" /> <span class="f8">ISTE</span></a>
+                    <img src="images/Logos/ISTEsblue.svg" width="51px" height="51px" /> <span class="f8">ISTE</span></a>
             </h1>
             <div class="position-relative">
                 <a href="#menu" id="toggle">
