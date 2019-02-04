@@ -378,15 +378,18 @@ hr.seperator {
 
 @keyframes blinkish {
     0% {
-        background: transparent;
+        background: rgba(0, 0, 0, 0.7);
+        box-shadow:0 0 10px #428bca00;
     }
 
     50% {
         background: #428bca;
+        box-shadow: 0 0 10px #428bca;        
     }
 
     100% {
-        background: transparent;
+        background: rgba(0, 0, 0, 0.7);
+        box-shadow: 0 0 10px#428bca00;
     }
 }
 

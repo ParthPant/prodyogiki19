@@ -256,7 +256,9 @@
                 <h3 class="agile-head text-center">Schedule</h3>
                 <br>
                 <div class="row my-3">
-                    <div class="col-lg-3 col-md-3 col-sm-12 text-center date off">
+                    <!--Empty Dates NECESARRY to for js date to work-->
+                    <div class="date" style="display:none;"></div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 text-center date " data="2">
                         <h3>2<sup>nd</sup><br>FEB</h3>
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-12 event-card " >
@@ -266,7 +268,7 @@
                 </div>
 
                 <div class="row my-3">
-                    <div class="col-lg-3 col-md-3 col-sm-12 text-center date off">
+                    <div class="col-lg-3 col-md-3 col-sm-12 text-center date "data="3">
                         <h3>3<sup>rd</sup><br>FEB</h3>
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-12 event-card " >
@@ -275,7 +277,7 @@
                 </div>
 
                 <div class="row my-3">
-                    <div class=" col-lg-3 col-md-3 col-sm-12 text-center date active">
+                    <div class=" col-lg-3 col-md-3 col-sm-12 text-center date"data="4">
                         <h3>4<sup>th</sup><br>FEB</h3>
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-12 event-card ">
@@ -286,7 +288,7 @@
 
 
                 <div class="row my-3">
-                    <div class=" col-lg-3 col-md-3 col-sm-12 text-center date ">
+                    <div class=" col-lg-3 col-md-3 col-sm-12 text-center date "data="5">
                         <h3>5<sup>th</sup><br>FEB</h3>
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-12 event-card ">
@@ -294,17 +296,10 @@
                     </div>
                 </div>
 
-                <!-- <div class="row my-3">
-                            <div class=" text-center date ">
-                                <h3>7<sup>th</sup><br>FEB</h3>
-                            </div>
-                            <div class="col-lg-9 col-md-9 col-sm-12 event-card ">
-                                <a href="#dataThon" class="scheduleLink">Datathon</a>  
-                            </div>
-                        </div> -->
-
                 <div class="row my-3">
-                    <div class=" col-lg-3 col-md-3 col-sm-12 text-center date ">
+                        <div class="date" style="display:none;"></div>
+                        <div class="date" style="display:none;"></div>
+                    <div class=" col-lg-3 col-md-3 col-sm-12 text-center date " data="8">
                         <h3>8<sup>th</sup><br>FEB</h3>
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-12 event-card ">
@@ -316,7 +311,7 @@
                 </div>
 
                 <div class="row my-3">
-                    <div class=" col-lg-3 col-md-3 col-sm-12 text-center date ">
+                    <div class=" col-lg-3 col-md-3 col-sm-12 text-center date "data="9">
                         <h3>9<sup>th</sup><br>FEB</h3>
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-12 event-card ">
@@ -332,7 +327,7 @@
                 </div>
 
                 <div class="row my-3">
-                    <div class=" col-lg-3 col-md-3 col-sm-12 text-center date " style="text-align:center">
+                    <div class=" col-lg-3 col-md-3 col-sm-12 text-center date " data="10">
                         <h3>10<sup>th</sup><br>FEB</h3>
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-12 event-card ">
@@ -347,70 +342,20 @@
                     </div>
                 </div>
             </div>
+
+            <script>
+                var d = new Date();
+                var today = d.getDate();
+
+                var dates = document.getElementsByClassName("date");
+                var i=0;
+                for(i=0;i<today-1;++i) {
+                    dates[i].classList.add("off");
+                }
+                dates[today-1].classList.add("active");
+            </script>
         </section>
 
-        <!-- talks 
-    <section class="processw3-top py-5" id="talks">
-        <div class="container py-md-5">
-            <div class="title-sec-agile text-center">
-                
-                <h3 class="agile-head">Talks</h3>
-                <p class="title-text"></p>
-            </div>
-
-            <br><br>
-
-            <div class="about-main-wthree">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-6 abt-left p-0">
-                            <div class="abt-left-top">
-                                <div class="layer-agileits1">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img src="images/unknown.jpg" alt="" class="img-fluid" />
-                                        </div>
-                                        <div class="col-8 ab-grid-left">
-                                            <h5></h5>
-                                            <h4>Speaker</h4>
-                                            <p></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="abt-left-bottom">
-                                <div class="layer-agileits2">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img src="images/unknown.jpg" alt="" class="img-fluid" />
-                                        </div>
-                                        <div class="col-8 ab-grid-left">
-                                            <h5></h5>
-                                            <h4>Speaker</h4>
-                                            <p></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 abt-right p-0">
-                            <div class="layer-agileits-right">
-                                <div class="ab-right">
-                                    <div class="txt-ab-right">
-                                        <h5></h5>
-                                        <h4>Speaker</h4>
-                                        <p></p>
-                                        <img src="images/unknown.jpg" alt="" class="img-fluid col-8 d-flex mx-auto" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!- //talks -->
         <!-- workshops -->
         <section class="courses-sec py-lg-5 pb-5" id="events">
             <div class="container">
