@@ -1,6 +1,7 @@
 html {
     height: 100%;
 }
+
 body {
     font-family: "Montserrat", sans-serif;
     /* background: #010101; */
@@ -8,12 +9,18 @@ body {
 }
 
 #parallax {
-    background: url(../images/stars.jpg) no-repeat center;
+    background: url(../images/backgrounds/mathss.gif) no-repeat center;
     background-size: cover;
-    background-attachment: fixed !important;  
-    min-height: 100vh;
+    background-attachment: fixed !important;
+    min-height: 1080px;
 }
 
+@media screen and (max-width:480px) {
+    #parallax {
+        background-attachment: scroll; 
+        background-repeat: repeat-y;
+    }
+}
 body a,
 .slider-info a,
 .card.card-pricing {
@@ -69,69 +76,13 @@ body a:focus {
     height: 100vh;
     width: 100%;
     color: #fff;
-    background-image : url(../images/backgrounds/frpageland.png) ;
+    background-image: url(../images/backgrounds/frpage.svg);
     background-size: cover;
 }
-#nith {
-    position: absolute;
-    top : 30%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height : 20vmin;
-}
-#face-text {
-    position: absolute;
-    top : 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.51);
-    font-weight: 700;
-    font-size : 5vw;
-    font-family: Montserrat, sans-serif;
-}
-#face-text::before {
-    content: attr(data-boi);
-    position : absolute;
-    top : 0;
-    left: 0;
-    width: 0%;
-    color: #1da1f2;
-    word-wrap: none;
-    overflow: hidden;
-    transition: 1s;
-}
-#face-text:hover::before {
-    width : 100%;
-}
+
+
 
 /*-- bottom-to-top --*/
-#toTop {
-    display: none;
-    text-decoration: none;
-    position: fixed;
-    bottom: 24px;
-    right: 3%;
-    overflow: hidden;
-    z-index: 999;
-    width: 32px;
-    height: 32px;
-    border: none;
-    text-indent: 100%;
-    background: url(../images/move-top.png) no-repeat 0px 0px;
-}
-
-#toTopHover {
-    width: 32px;
-    height: 32px;
-    display: block;
-    overflow: hidden;
-    float: right;
-    opacity: 0;
-    -moz-opacity: 0;
-    filter: alpha(opacity=0);
-}
-
 /*-- //bottom-to-top --*/
 /*--/navbar--*/
 .navbar {
@@ -357,64 +308,17 @@ h3.agile-title {
 }
 
 /* The following is all you really need for the effect to work */
-.backbox h4 {
-    font-family: "Montserrat", sans-serif;
-    text-transform: capitalize;
-    font-size: 2.3rem;
-    top: 16rem;
-    font-weight: bold;
-    color: #ffeb3b;
-    padding: 0.0625rem;
-    line-height: 2;
-    width: 100%;
-    position: absolute;
-}
-
-.bb-text {
-    color: #fff;
-}
-
-.backbox:before {
-    width: 5px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    content: "";
-    background-color: #428bca;
-}
-
-.backbox:after {
-    width: 100%;
-    height: 0.125rem;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: "";
-    background-image: -webkit-gradient(linear,
-        0% 50%,
-        100% 50%,
-        color-stop(0%, rgba(255, 255, 255, 0)),
-        color-stop(40%, rgba(255, 255, 255, 0)),
-        color-stop(60%, rgba(255, 255, 255, 0.8)),
-        color-stop(100%, rgba(255, 255, 255, 0)));
-    background-image: -moz-linear-gradient(left,
-        rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0) 40%,
-        rgba(255, 255, 255, 0) 60%,
-        rgba(255, 255, 255, 0));
-    background-image: -webkit-linear-gradient(left,
-        rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0) 40%,
-        rgba(255, 255, 255, 0) 60%,
-        rgba(255, 255, 255, 0));
-    background-image: linear-gradient(to right,
-        rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0) 40%,
-        rgba(255, 255, 255, 0) 60%,
-        rgba(255, 255, 255, 0));
-}
 
 /* //banner text */
+
+/* Frequents */
+hr.seperator {
+    background-color: #428bca;
+    height: 5px;
+    margin: 1em 0;
+}
+
+
 
 /* ABOUT US */
 
@@ -431,7 +335,7 @@ h3.agile-title {
 }
 
 .jumbotron {
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0, 0.7);
     /* margin-top: 50px; */
 }
 
@@ -442,25 +346,56 @@ h3.agile-title {
 
 /* SCHEDULE */
 
-#schedule .event-card {
-    box-shadow: 0 0 10px #010101;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px 21px;
+
+.event-card {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 21px 21px;
     font-size: 1.2em;
     color: #aaa;
-    text-align: right;
-    border-radius: 7px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    text-align: center;
     font-weight: 700;
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
 }
 
 #schedule .date {
     box-shadow: 0 0 10px #428bca;
     padding: 15px;
-    border-radius: 7px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #428bca;
+    color: #fff;
+}
+
+#schedule .date.active {
+    color: #fff;
+    animation: blinkish 1s infinite;
+}
+
+@keyframes blinkish {
+    0% {
+        background: rgba(0, 0, 0, 0.7);
+        box-shadow:0 0 10px #428bca00;
+    }
+
+    50% {
+        background: #428bca;
+        box-shadow: 0 0 10px #428bca;        
+    }
+
+    100% {
+        background: rgba(0, 0, 0, 0.7);
+        box-shadow: 0 0 10px#428bca00;
+    }
+}
+
+#schedule .date.off {
+    background: #0f0;
+    color: #fff;
 }
 
 #schedule .date h3 {
@@ -471,22 +406,76 @@ h3.agile-title {
     margin: 5px;
 }
 
+/* SPONSORS */
+
+#ourSponsors {
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+#ourSponsors div.container {
+    padding-bottom: 36px;
+    padding-top: 24px;
+}
+
+#ourSponsors div.container.white {
+    background: #fff;
+}
+
+.label {
+    margin-top: 100px;
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: black;
+}
+
+
+.sponsor img {
+    max-width: 360px;
+    max-width: 100%;
+}
+
+span.name {
+    margin-top: 24px auto;
+    font-size: 20px;
+    color: white;
+    background: black;
+    padding: 6px 16px;
+    display: inline-block;
+}
+
+#moringa {
+    max-width: 100%;
+    padding: 24px 0px;
+}
+
+@media screen and (min-width: 500px) {
+    #moringa {
+        max-width: 480px;
+    }
+}
+
+/* SPONSORED */
+
 /* title  */
 span.title-icon-wthree {
     color: #e7c13c;
     font-size: 1em;
 }
 
-.scheduleLink {
+a.scheduleLink {
     color: white;
     cursor: pointer;
     transition: all 0.3s;
     font-size: 16px;
+    display : block;
+    flex : 100%;
 }
 
-.scheduleLink:hover {
+a.scheduleLink:hover {
     color: white;
-    font-size:20px;
+    font-size: 20px;
 }
 
 h3.agile-head {
@@ -522,8 +511,8 @@ a.btn-agile span {
 }
 
 .card {
-    background-color: rgba(0, 0, 0, 0.4);
-    box-shadow: none !important; 
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: none !important;
     min-height: 710px;
 }
 
@@ -683,7 +672,7 @@ h4.panel-title {
 #accordion4 .panel-title a.collapsed:before {
     content: "\f106";
     font-family: "FontAwesome";
-    font-weight: 900; 
+    font-weight: 900;
     width: 55px;
     height: 100%;
     text-align: center;
@@ -916,7 +905,7 @@ ul.list-agileits li a {
 }
 
 h5.footer-top-title {
-    color: #fff;
+    color: #000c;
     text-transform: uppercase;
     font-size: 1.2em;
     margin-bottom: 1em;
@@ -939,11 +928,11 @@ h5.footer-top-title {
 address p,
 .header-agile li,
 .header-agile li p {
-    color: #fff;
+    color: #000c;
 }
 
 .header-agile li a {
-    color: #fff;
+    color: #000c;
 }
 
 .address p a:hover {
@@ -989,6 +978,18 @@ textarea {
     width: 300px;
     height: 75px;
 }
+
+/* SPONSORS */
+
+.carousel-control-prev {
+    z-index: 5;
+}
+
+.carousel-control-next {
+    z-index: 5;
+}
+
+/* END SPONSORS */
 
 /* //footer */
 /* single */
@@ -1365,25 +1366,25 @@ textarea {
     #prodyHeading {
         z-index: 1;
         color: white;
-        margin-top: 400px;    
+        margin-top: 400px;
         position: absolute;
-        margin-left:100px;
+        margin-left: 100px;
         font-size: 80px;
         font-weight: bold;
-        text-shadow: 0 0 20px  black;
+        text-shadow: 0 0 20px black;
     }
 }
 
- @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     #prodyHeading {
         z-index: 1;
         color: white;
-        margin-top: 300px;    
+        margin-top: 300px;
         position: absolute;
-        margin-left:auto;
+        margin-left: auto;
         font-size: 60px;
         font-weight: bold;
-        text-shadow: 0 0 20px  black;
+        text-shadow: 0 0 20px black;
     }
 
     @media screen and (max-width: 600px) {
