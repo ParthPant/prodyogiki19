@@ -106,13 +106,16 @@
         <style>
             #logos {
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: center;
                 position: absolute;
-                width: 100%;
                 top: 30%;
                 left: 50%;
-                transform: translate(-50%, -50%);
-                height: 20vmin;
+                transform: translate(-50%,-30%);
+            }
+            #logos>img {
+                display:inline-block;
+                height : 20vmin;
+                margin : 0 5vmin;
             }
             #whatis {
                 position: absolute;
@@ -1642,7 +1645,6 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/scrolling-nav.js"></script>
     <!-- start-smooth-scrolling -->
-    <script src="js/move-top.js"></script>
     <script src="js/easing.js"></script>
     <script>
         jQuery(document).ready(function ($) {
