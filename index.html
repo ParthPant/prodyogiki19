@@ -131,23 +131,6 @@
             }
             #name {
                 font-size:10vw; 
-                transition: step-end;
-            }
-            #name::before {
-                content: attr(data-boi);
-                position: absolute;
-                width: 0%;
-                color: #1da1f2;
-                overflow: hidden;
-                transition: 1s  cubic-bezier(0.68, -0.55, 0.265, 1.55);
-                text-shadow: 0.5vw 0.5vw 0.5vw rgba(0,0,0,0.42);
-            }
-            #name:hover {
-                color: transparent;
-                text-shadow: none;
-            }
-            #name:hover::before {
-                width:100%;
             }
         </style>
         <script src="js/particles.js"></script>
