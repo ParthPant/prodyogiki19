@@ -16,12 +16,6 @@ body {
     overflow: scroll;
 }
 
-@media screen and (max-width:480px) {
-    #parallax {
-        background-attachment: scroll; 
-        background-repeat: repeat-y;
-    }
-}
 body a,
 .slider-info a,
 .card.card-pricing {
