@@ -390,6 +390,7 @@ hr.seperator {
 
 #schedule .date.off {
     background: #0f0;
+    box-shadow: 0 0 10px #0f0;
     color: #fff;
 }
 
