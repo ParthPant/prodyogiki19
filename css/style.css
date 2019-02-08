@@ -13,9 +13,12 @@ body {
     background-size: cover;
     background-attachment: fixed !important;
     height: 100vh;
-    overflow: scroll;
 }
-
+@media screen and (max-width:720px) {
+    #parallax {
+        overflow: scroll;
+    }
+}
 body a,
 .slider-info a,
 .card.card-pricing {
@@ -74,8 +77,72 @@ body a:focus {
     background-image: url(../images/backgrounds/frpage.svg);
     background-size: cover;
 }
+#logos {
+    top: 21%;
+    display: flex;
+    justify-content: center;
+}
+#logos>img {
+    display:inline-block;
+    height : 20vmin;
+    margin : 0 5vmin;
+}
 
+#name,#year {
+    font-weight:900;
+    text-shadow: 0.5vw 0.5vw 0.5vw rgba(0,0,0,0.42);
+    font-size: 5vw;
+    text-align: center;
+}
+#name {
+    font-size:10vw; 
+}
+#teaser {
+    top: 73%;
 
+    font-weight : 500;
+    font-size: 1em;
+}
+#teaser a {
+    border : 2px solid white;
+    transition: 0.3s;
+    color: #000;
+}
+#teaser a:hover {
+    background: transparent;
+    color: white;
+}
+
+#tv {
+    display: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: 1s;
+    z-index : 5;
+}
+#closer {
+    top : 30%;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.85);
+}
+.origin {
+    position:absolute;
+    top : 50%;
+    left : 50%;
+}
+.fifty {
+    transform: translate(-50%,-50%);
+}
+
+@media screen and (max-width:600px) {
+    #logos {
+        top : 33%
+    }
+}
 
 /*-- bottom-to-top --*/
 /*-- //bottom-to-top --*/

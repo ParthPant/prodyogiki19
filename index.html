@@ -93,54 +93,36 @@
 
     <header>
         <div id="face" class="text-center">
-            <div id="logos">
+            <div id="logos" class="fifty origin">
                 <img src="images/Logos/nith.svg" alt="">
                 <img src="images/Logos/prodyogiki.svg" alt="">
                 <img src="images/Logos/ISTEs.svg" alt="">
             </div>
-            <div id="whatis">
+            <div id="whatis" class="fifty origin">
                 <div id="name" data-boi="PRODY">PRODYOGIKI</div>
-                <!--div id="year">2K19</div>-->
+                <div id="year">2K19</div>
             </div>
-            <video src="video/Official Video_Prodyogiki.mp4" width="320" height="180" poster="video/thumbnail.png"
-                controls>
+        
+            <div id="teaser" class="fifty origin">
                 Prodyogiki is here get a glimpse!!<br>
-                <a class="btn btn-light" href="video/Official Video_Prodyogiki.mp4">Watch Teaser!!</a>
-            </video>
+                <a class="btn btn-light" onclick="showVideo()"> Watch Trailer!! <i class="fa fa-play"></i> </a>
+            </div>
+            <div id="tv" class="overlay">
+                <button id="closer" class="btn btn-danger origin fifty" onclick="hideVideo()">
+                    <i class="fa fa-close"></i> close
+                </button>
+                <iframe id="cathode" class ="fifty origin"width="352" height="198" src="https://www.youtube.com/embed/rYydsT_lt7s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
-        <style>
-            #logos {
-                padding-top:20vh;
-                display: flex;
-                justify-content: center;
+        <script>
+            function showVideo() {
+                $("#tv").show();
             }
-            #logos>img {
-                display:inline-block;
-                height : 20vmin;
-                margin : 0 5vmin;
+
+            function hideVideo() {
+                $("#tv").hide();
             }
-            #whatis {
-                margin:3vh 0;
-            }
-            #name,#year {
-                font-weight:900;
-                text-shadow: 0.5vw 0.5vw 0.5vw rgba(0,0,0,0.42);
-                font-size: 5vw;
-                text-align: center;
-            }
-            #name {
-                font-size:7vw; 
-            }
-            @media screen and (max-width:720px) {
-                #name {
-                    font-size:10vw; 
-                }
-            }
-            #face vedio {
-                position: absolute;
-                bottom: 0;
-            }
-        </style>
+        </script>
         <script src="js/particles.js"></script>
         <script src="js/app.js"></script>
     </header>
