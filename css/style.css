@@ -12,11 +12,12 @@ body {
     background: url(../images/backgrounds/maths.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed !important;
-    height: 100vh;
+    min-height: 100vh;
 }
 @media screen and (max-width:720px) {
     #parallax {
         overflow: scroll;
+        height:100vh;
     }
 }
 body a,
