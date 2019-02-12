@@ -9,16 +9,15 @@ body {
 }
 
 #parallax {
-    background: url(../images/backgrounds/mathss.gif) no-repeat center;
+    background: url(../images/backgrounds/maths.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed !important;
-    min-height: 1080px;
+    min-height: 100vh;
 }
-
-@media screen and (max-width:480px) {
+@media screen and (max-width:720px) {
     #parallax {
-        background-attachment: scroll; 
-        background-repeat: repeat-y;
+        overflow: scroll;
+        height:100vh;
     }
 }
 body a,
@@ -79,8 +78,72 @@ body a:focus {
     background-image: url(../images/backgrounds/frpage.svg);
     background-size: cover;
 }
+#logos {
+    top: 21%;
+    display: flex;
+    justify-content: center;
+}
+#logos>img {
+    display:inline-block;
+    height : 20vmin;
+    margin : 0 5vmin;
+}
 
+#name,#year {
+    font-weight:900;
+    text-shadow: 0.5vw 0.5vw 0.5vw rgba(0,0,0,0.42);
+    font-size: 5vw;
+    text-align: center;
+}
+#name {
+    font-size:10vw; 
+}
+#teaser {
+    top: 73%;
 
+    font-weight : 500;
+    font-size: 1em;
+}
+#teaser a {
+    border : 2px solid white;
+    transition: 0.3s;
+    color: #000;
+}
+#teaser a:hover {
+    background: transparent;
+    color: white;
+}
+
+#tv {
+    display: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: 1s;
+    z-index : 5;
+}
+#closer {
+    top : 30%;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.85);
+}
+.origin {
+    position:absolute;
+    top : 50%;
+    left : 50%;
+}
+.fifty {
+    transform: translate(-50%,-50%);
+}
+
+@media screen and (max-width:600px) {
+    #logos {
+        top : 33%
+    }
+}
 
 /*-- bottom-to-top --*/
 /*-- //bottom-to-top --*/
@@ -395,6 +458,7 @@ hr.seperator {
 
 #schedule .date.off {
     background: #0f0;
+    box-shadow: 0 0 10px #0f0;
     color: #fff;
 }
 
