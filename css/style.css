@@ -99,8 +99,7 @@ body a:focus {
     font-size:10vw; 
 }
 #teaser {
-    top: 73%;
-
+    margin-top: 20%;
     font-weight : 500;
     font-size: 1em;
 }
@@ -109,6 +108,13 @@ body a:focus {
     transition: 0.3s;
     color: #000;
 }
+
+@media only screen and (max-width: 576px) {
+    #teaser {
+        margin-top: 40%;
+    }
+}
+
 #teaser a:hover {
     background: transparent;
     color: white;
